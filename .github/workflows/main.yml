@@ -34,6 +34,8 @@ jobs:
         with:
           context: .
           push: true
+          tags: $my-python-app:latest
+          
       - name: Run tests
         run: |
          pip install pytest
