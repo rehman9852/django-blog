@@ -28,7 +28,6 @@ jobs:
 
       - name: Run tests
         run: |
-          pip install pytest
           pytest
 
       - name: Set up Docker Buildx
