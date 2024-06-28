@@ -35,3 +35,6 @@ jobs:
       
       - name: Push Docker image
         run: docker push rehman9852/my-django-app:latest
+        env:
+          sPAT_Token: $(BuildAccessToken)
+          RELEASE_ALL: ${{ parameters.release_all }}
