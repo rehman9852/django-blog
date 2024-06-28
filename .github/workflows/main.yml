@@ -20,7 +20,7 @@ jobs:
         run: docker images
      
       - name: Log in to Docker Hub
-        run: echo "${{ secrets.MY_DOCKER_PASSWORD }}" | docker login -u "${{ secrets.rehman9852 }}" --password-stdin
+        run: echo "${{ secrets.MY_DOCKER_PASSWORD }}" | docker login -u "${{ secrets.rehman9852 }}"
         env:
           DOCKER_USERNAME: ${{ secrets.rehman9852 }}
           DOCKER_PASSWORD: ${{ secrets.MY_DOCKER_PASSWORD }}
