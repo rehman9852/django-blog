@@ -28,5 +28,5 @@ jobs:
       - name: Build Docker image with 'latest' tag
         run: docker build -t rehman9852/my-django-app:latest .
       
-      - name: Push Docker image with 'latest' tag
+      - name: Push Docker image
         run: docker push rehman9852/my-django-app:latest
